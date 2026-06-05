@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matrix Tornado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main id="stage" aria-label="Animated matrix landing page">
+      <canvas id="tornado-canvas" aria-hidden="true"></canvas>
+      <div id="label-layer" aria-hidden="true"></div>
+
+      <section id="matrix-screen" aria-label="Matrix reduction">
+        <div id="matrix" class="matrix" aria-label="Click the red zero to begin">
+          <div class="bracket bracket-left" aria-hidden="true"></div>
+          <div class="matrix-grid" aria-hidden="true"></div>
+          <div class="bracket bracket-right" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <div id="caption" aria-live="polite">click the red 0</div>
+      <div id="greeting" aria-hidden="true">
+        <span class="greeting-word">welcome</span>
+      </div>
+    </main>
+
+    <nav id="site-nav" class="nav" aria-label="Site navigation">
+      <a href="./SWE_UsmanR_2026_Newv3_.pdf" data-action="resume">Resume</a>
+      <a href="https://github.com/uiu252" target="_blank" rel="noreferrer">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact" data-action="contact">Contact</a>
+    </nav>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
